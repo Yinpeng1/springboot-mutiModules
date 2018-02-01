@@ -22,4 +22,13 @@ public class HelloController {
     public List<QuestionEntity> list (){
         return helloService.list();
     }
+
+    @RequestMapping("save")
+    public void save(){
+        try {
+            helloService.save();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/test-service/pom.xml" />
         <option value="$PROJECT_DIR$/test-config/pom.xml" />
         <option value="$PROJECT_DIR$/test-mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/test-redis/pom.xml" />
       </list>
     </option>
   </component>
