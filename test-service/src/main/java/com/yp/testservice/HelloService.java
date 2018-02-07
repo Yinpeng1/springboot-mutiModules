@@ -1,11 +1,11 @@
 package com.yp.testservice;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.yp.Entity.QuestionEntity;
 import com.yp.testmapper.TestMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -42,5 +42,16 @@ public class HelloService {
         e.setAnswer("world");
         redisTemplate.opsForValue().set(e.getQuestion(),e);
         testMapper.insert(e);
+    }
+
+    @Reference
+    private com.yp.apiservice.service.HelloService helloService;
+
+    public String hello(){
+        return helloService.sayHello();
+    }
+
+    public void add(){
+        helloService.add();
     }
 }

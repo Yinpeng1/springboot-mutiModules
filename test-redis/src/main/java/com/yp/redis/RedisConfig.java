@@ -41,18 +41,18 @@ public class RedisConfig extends CachingConfigurerSupport {
         return redisTemplate;
     }
 
-    @Bean
-    public KeyGenerator keyGenerator(){
-        return new KeyGenerator() {
-            @Override
-            public Object generate(Object o, Method method, Object... objects) {
-                if (objects == null || objects.length < 1){
-                    return "QuestionCache1";
-                }
-                return "QuestionCache3";
-            }
-        };
-    }
+//    @Bean
+//    public KeyGenerator keyGenerator(){
+//        return new KeyGenerator() {
+//            @Override
+//            public Object generate(Object o, Method method, Object... objects) {
+//                if (objects == null || objects.length < 1){
+//                    return "QuestionCache1";
+//                }
+//                return "QuestionCache3";
+//            }
+//        };
+//    }
 
     @Bean
     public CacheManager cacheManager(RedisTemplate<?,?> redisTemplate){
