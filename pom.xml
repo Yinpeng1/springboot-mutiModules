@@ -17,6 +17,7 @@
 		<module>test-web</module>
 		<module>test-mapper</module>
 		<module>test-redis</module>
+		<module>test-rocketmq</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

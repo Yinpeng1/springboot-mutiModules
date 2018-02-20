@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/test-config/pom.xml" />
         <option value="$PROJECT_DIR$/test-mapper/pom.xml" />
         <option value="$PROJECT_DIR$/test-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/test-rocketmq/pom.xml" />
       </list>
     </option>
   </component>

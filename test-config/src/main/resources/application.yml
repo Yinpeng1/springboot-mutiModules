@@ -1,4 +1,3 @@
-
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -28,7 +27,5 @@ spring:
         organization:
       protocol:
         port: 20881  # 可选 性能调优 远程服务调用超时时间(毫秒) 1.0.16以上版本
-#
-#spring:
-#  profiles:
-#    active: dev
+
+

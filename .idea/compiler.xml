@@ -9,6 +9,7 @@
         <module name="test-config" />
         <module name="test-mapper" />
         <module name="test-redis" />
+        <module name="test-rocketmq" />
         <module name="test-service" />
         <module name="test-web" />
       </profile>
@@ -18,6 +19,7 @@
       <module name="test-config" target="1.8" />
       <module name="test-mapper" target="1.8" />
       <module name="test-redis" target="1.8" />
+      <module name="test-rocketmq" target="1.8" />
       <module name="test-service" target="1.8" />
       <module name="test-web" target="1.8" />
     </bytecodeTargetLevel>

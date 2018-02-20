@@ -20,14 +20,8 @@ public class TestWebApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TestWebApplication.class, args);
-//		System.exit(SpringApplication
-//				.exit(SpringApplication.run(TestWebApplication.class, args)));
 	}
 
-//	@Bean
-//	public ExitCodeGenerator exitCodeGenerator() {
-//		return () -> 42;
-//	}
 //	@Bean
 //	public String nihao(){
 //		System.out.println(HelloService.sayHello());
